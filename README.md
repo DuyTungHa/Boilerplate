@@ -2,7 +2,7 @@
 
 Backend setup for GraphQL
 
-1. Clone this repo
+1. Clone this repo and run npm install
 2. Create file variables.env as following:
    - FRONTEND_URL="http://localhost:7777"
    - PRISMA_ENDPOINT="PutYourPrismaEndpointHere"
