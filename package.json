@@ -1,11 +1,14 @@
 {
-  "name": "pollmango-backend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "the backend for Alphitonia",
+  "description": "the backend for",
   "scripts": {
     "start": "nodemon -e js,graphql -x node src/index.js",
     "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
-    "test": "jest"
+    "test": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "apollo-server-express": "^2.9.4",
@@ -24,14 +27,10 @@
   },
   "license": "MIT",
   "repository": {
-    "url": "alphitonia.com"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
+    "url": "backend.com"
   },
   "devDependencies": {
+    "apollo-server-testing": "^2.9.14",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -40,6 +39,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "husky": "^3.0.5",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2"
   },
   "lint-staged": {
