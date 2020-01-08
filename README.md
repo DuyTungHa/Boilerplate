@@ -1,4 +1,4 @@
-# GraphQLBE
+# Backend Boilerplate
 
 ## STACK: graphql-yoga, Express, Prisma
 
