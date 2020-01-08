@@ -2,17 +2,17 @@
 
 require('dotenv').config({ path: 'config/test.env' });
 
-const { createTestClient } = require('apollo-server-testing');
-const { gql } = require('apollo-server-express');
+// const { createTestClient } = require('apollo-server-testing');
+// const { gql } = require('apollo-server-express');
 const User = require('../src/models/user');
 
-const { server } = require('../src/app');
+// const { server } = require('./fixtures/serverSetup')();
 
 beforeEach(async () => {
   await User.deleteMany();
 });
 
-const { query, mutate } = createTestClient(server);
+// const { query, mutate } = createTestClient(server);
 
 describe('Mutations', () => {
   it('Testing 1', () => {

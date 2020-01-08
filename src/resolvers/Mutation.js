@@ -1,7 +1,7 @@
+const authenticationMutations = require('./mutations/authentication');
+
 const mutations = {
-  hi: () => {
-    return 'Hello';
-  }
+  ...authenticationMutations
 };
 
 module.exports = mutations;

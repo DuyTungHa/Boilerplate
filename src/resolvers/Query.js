@@ -1,7 +1,7 @@
+const userQueries = require('./queries/user');
+
 const Query = {
-  hi: () => {
-    return 'Hello';
-  }
+  ...userQueries
 };
 
 module.exports = Query;
