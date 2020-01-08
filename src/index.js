@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-require('dotenv').config({ path: 'variables.env' });
+require('dotenv').config({ path: 'config/dev.env' });
 const createServer = require('./createServer');
 // const db = require("./db"); TODO uncomment this latter
 
