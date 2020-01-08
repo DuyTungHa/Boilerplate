@@ -1,24 +1,7 @@
-# GraphQLBE
+# BOILERPLATE FOR WEB DEVELOPMENT
 
-Backend setup for GraphQL
+## This repository contains the recipe for creating web api and client
 
-1. Clone this repo and run npm install
-2. Create file variables.env as following:
-   - FRONTEND_URL="http://localhost:7777"
-   - PRISMA_ENDPOINT="PutYourPrismaEndpointHere"
-   - PRISMA_SECRET="omgplzdonttellanyone"
-   - APP_SECRET="jwtsecret123321"
-   - STRIPE_SECRET="sk_123youchanget his"
-   - PORT=4444
-3. Globally install prisma cli
-   - npm i -g prisma
-4. Run
-   - prisma login
-5. Run
-   - npm run deploy (do this every time you change the datamodel.prisma )
-6. Start the server
-   - npm run dev
-7. Go to http://localhost:4444, you will see the graphql client.
+### Created by Duy Tung Ha
 
-- Install eslint and prettier extensions if you want..
-- Visit this link you want more information: https://github.com/huynet/lint
+Each branch contains a boilerplate for a different stack of technology.
