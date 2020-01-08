@@ -1,35 +1,25 @@
 {
-  "name": "backend-setup",
+  "name": "client-setup",
   "version": "1.0.0",
-  "description": "the backend",
+  "description": "the frontend",
   "scripts": {
-    "start": "nodemon -e js,graphql -x node src/index.js",
-    "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
-    "test": "jest",
-    "deploy": "prisma deploy --env-file variables.env"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "bcryptjs": "2.4.3",
-    "cookie-parser": "^1.4.3",
-    "dotenv": "6.0.0",
-    "graphql": "^0.13.2",
-    "graphql-cli": "^2.16.7",
-    "graphql-yoga": "1.16.2",
-    "husky": "^3.0.5",
-    "jsonwebtoken": "8.3.0",
-    "lint-staged": "^9.2.5",
-    "nodemailer": "^4.6.8",
-    "nodemon": "^1.18.7",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2",
-    "prisma": "^1.34.8",
-    "prisma-binding": "2.1.6",
-    "stripe": "^6.12.1"
+    "flv.js": "^1.5.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.3.0"
   },
   "license": "MIT",
   "repository": {
-    "url": "alphitonia.com"
+    "url": "ypurUrl"
   },
   "babel": {
     "presets": [
@@ -56,5 +46,20 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
