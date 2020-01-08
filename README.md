@@ -1,5 +1,7 @@
 # GraphQLBE
 
+# STACK: graphql-yoga, express, prisma
+
 Backend setup for GraphQL
 
 1. Clone this repo and run npm install
