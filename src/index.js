@@ -3,11 +3,7 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import dotenv from 'dotenv';
 import { ApolloProvider } from '@apollo/client';
-
-// Set up environment variables
-dotenv.config({ path: 'config/dev.env' });
 
 import client from './apollo';
 
