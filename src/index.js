@@ -3,16 +3,15 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { ApolloProvider } from '@apollo/client';
+import { ApolloProvider } from '@apollo/react-hooks';
 
-import client from './apollo';
+import client from './apollo/apollo';
 
-const App = () => (
+import App from './components/App';
+
+render(
   <ApolloProvider client={client}>
-    <div>
-      <h2>My first Apollo app</h2>
-    </div>
-  </ApolloProvider>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
 );
-
-render(<App />, document.getElementById('root'));
