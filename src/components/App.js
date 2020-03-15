@@ -4,11 +4,11 @@ import Dogs from './Dogs';
 import DogPhoto from './DogPhoto';
 
 const App = () => {
-  const [breed, setBreed] = useState('');
+  const [breed, setBreed] = useState();
   return (
     <div>
       <Dogs onDogSelected={e => setBreed(e.target.value)} />
-      <DogPhoto breed={breed} />
+      {breed && <DogPhoto breed={breed} />}
     </div>
   );
 };
